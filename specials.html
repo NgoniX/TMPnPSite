@@ -1,0 +1,352 @@
+<!-- html5 bootstrap 5 supermarket template -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TM Pick n Pay Zimbabwe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- login/register header section -->
+    <header class="login-header">
+        <nav class="navbar navbar-custom ml-4">
+            <div class="navbar-brand">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <!-- select option dropdown list of provinces in Zimbabwe -->
+                        <div class="custom-select">
+                            <select name="province" id="province">
+                                <option value="harare">Harare Region</option>
+                                <option value="bulawayo">Bulawayo Region</option>
+                                <option value="midlands">Midlands Region</option>
+                                <option value="manicaland">Manicaland Region</option>
+                                <option value="masvingo">Masvingo Region</option>
+                                <option value="mashonaland east">Mashonaland East Region</option>
+                                <option value="mashonaland west">Mashonaland West Region</option>
+                                <option value="mashonaland central">Mashonaland Central Region</option>
+                                <option value="matabeleland north">Matabeleland North Region</option>
+                                <option value="matabeleland south">Matabeleland South Region</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- select option dropdown list of provinces in Zimbabwe -->
+                        <div class="custom-select">
+                            <select name="store" id="store">
+                                <option value="PICK n PAY ARUNDEL">Store: PICK n PAY ARUNDEL</option>
+                                <option value="PICK n PAY ASPINDALE">Store: PICK n PAY ASPINDALE</option>
+                                <option value="PICK n PAY ASPINDALE">Store: PICK n PAY JOINA CITY</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- align login/register text to the right -->
+            <span class="login-reg-txt">
+                <a href="account.html" class="text-white">Login</a> 
+                <span class="text-white">|</span>
+            <a href="#" class="text-white">Register</a>
+            </span>
+        </nav>
+
+    </header>
+
+    <!-- header with logo, nav menu items, and search box -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.png" alt="logo" class="logo">
+                </a>
+
+                <!-- add 2 buttons with icons -->
+                <div class="d-flex flex-row header-btns ms-auto">
+                    <button class="btn btn-favorite">
+                        <i class="fas fa-heart"></i>
+                        <span class="text-uppercase btn-txt">favourites</span>
+                    </button>
+                    <button class="btn btn-shopping">
+                        <i class="fas fa-bars"></i>
+                        <span class="text-uppercase btn-txt">shopping list</span>
+                    </button>
+                    <!-- add truck icon and shopping basket icon -->
+                    <div class="d-flex header-icons">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- horizontal line -->
+    <hr class="container hr1">
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="#" class="navbar-brand">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav list-items ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link nav-txt">Home</a>
+                        </li>
+                        <!-- list with dropdown items -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link nav-txt dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop by aisle
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a href="#" class="dropdown-item">Product 1</a></li>
+                                <li><a href="#" class="dropdown-item">Product 2</a></li>
+                                <li><a href="#" class="dropdown-item">Product 3</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="specials.html" class="nav-link nav-txt">Specials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link nav-txt">Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link nav-txt">Store locations</a>
+                        </li>
+                    </ul>
+
+                    <!-- search box with search icon inside -->
+                    <div class="search-box ms-auto">
+                        <input type="text" placeholder="What are you looking for?" class="form-control">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- horizontal line -->
+    <hr class="container hr1">
+
+    <main>
+
+        <!-- special products with sale badge top right -->
+        <section>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+
+                            <a href="product-details.html"><img src="https://fakeimg.pl/600x400" alt="special1" class="card-img-top"></a>
+                            <span class="position-absolute top-0 start-100  
+                            translate-middle p-2 rounded-pill  
+                            badge-color border border-light  
+                            rounded-circle"> Sale
+    
+                            </span>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Product 1</h5>
+
+                                <!-- display strikethrough price and sale price -->
+                                <span class="fw-bold text-secondary fs-6">
+                                    <del>$20.00</del>
+                                </span>
+
+                                <span class="fw-bold fs-5">
+                                    $15.00
+                                </span>
+
+                                <div class="d-flex mt-3">
+                                    <input type="number" class="form-control quantity" value="1">
+                                    <a href="#" class="btn secondary-box-btn">Add to cart</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+
+                            <a href="product-details.html"><img src="https://fakeimg.pl/600x400" alt="special1" class="card-img-top"></a>
+                            <span class="position-absolute top-0 start-100  
+                            translate-middle p-2 rounded-pill  
+                            badge-color border border-light  
+                            rounded-circle"> Sale
+    
+                            </span>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Product 2</h5>
+                                <!-- display strikethrough price and sale price -->
+                                <span class="fw-bold text-secondary fs-6">
+                                    <del>$20.00</del>
+                                </span>
+
+                                <span class="fw-bold fs-5">
+                                    $15.00
+                                </span>
+
+                                <div class="d-flex mt-3">
+                                    <input type="number" class="form-control quantity" value="1">
+                                    <a href="#" class="btn secondary-box-btn">Add to cart</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+
+                            <a href="product-details.html"><img src="https://fakeimg.pl/600x400" alt="special1" class="card-img-top"></a>
+                            <span class="position-absolute top-0 start-100  
+                            translate-middle p-2 rounded-pill  
+                            badge-color border border-light  
+                            rounded-circle"> Sale
+    
+                            </span>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Product 3</h5>
+
+                                <!-- display strikethrough price and sale price -->
+                                <span class="fw-bold text-secondary fs-6">
+                                    <del>$20.00</del>
+                                </span>
+
+                                <span class="fw-bold fs-5">
+                                    $15.00
+                                </span>
+
+                                <div class="d-flex mt-3">
+                                    <input type="number" class="form-control quantity" value="1">
+                                    <a href="#" class="btn secondary-box-btn">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+
+                            <a href="product-details.html"><img src="https://fakeimg.pl/600x400" alt="special1" class="card-img-top"></a>
+                            <span class="position-absolute top-0 start-100  
+                            translate-middle p-2 rounded-pill  
+                            badge-color border border-light  
+                            rounded-circle"> Sale
+    
+                            </span>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Product 4</h5>
+
+                                <!-- display strikethrough price and sale price -->
+                                <span class="fw-bold text-secondary fs-6">
+                                    <del>$20.00</del>
+                                </span>
+
+                                <span class="fw-bold fs-5">
+                                    $15.00
+                                </span>
+
+                                <div class="d-flex mt-3">
+                                    <input type="number" class="form-control quantity" value="1">
+                                    <a href="#" class="btn secondary-box-btn">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+    </main>
+
+    <!-- footer with gray background -->
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-tag-line">
+                        <!-- img -->
+                        <img src="images/tagline.png" alt="logo" class="tagline">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-links mt-4">
+                        <!-- links -->
+                        <!-- nav ul li -->
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">useful links</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">help</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">shopping list</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- social media links and icons -->
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <hr class="hr1">
+                    <div class="social-media">
+                        <h6>Follow Us On</h6>
+                        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- copyright -->
+        <div class="container">
+            <div class="row">
+                <hr class="hr1 mt-3">
+                <div class="col-md-6">
+                    <p>&copy; 2024 TM Pick n Pay Zimbabwe. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Developed by <a href="#" class="text-decoration-none">Quatrohaus </a></p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

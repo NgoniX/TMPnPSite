@@ -45,6 +45,13 @@ a {
     color: var(--line-color);
 }
 
+.badge-color {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+}
+
 .secondary-color {
     color: var(--secondary-color);
 }
@@ -100,6 +107,10 @@ a {
     height: 200px;
     width: 100%;
     object-fit: contain;
+}
+
+.star-rating i {
+    color: var(--secondary-color);
 }
 
 
@@ -166,6 +177,15 @@ a {
     margin: 0 0 0 30px;
     font-size: 35px;
     color: var(--favorite-color);
+}
+
+.login-form {
+    border: 1px solid var(--line-color);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--input-bg-color);
+    width: 50%;
+    margin: 0 auto;
 }
 
 
