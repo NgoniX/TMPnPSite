@@ -219,7 +219,7 @@ a {
     font-weight: bold;
 }
 
-.header-btns button {
+.header-btns a {
     margin: 0 10px;
 }
 

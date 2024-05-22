@@ -147,192 +147,129 @@
 
     <main>
 
-        <!-- product details section -->
-        <section class="product-details mt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="https://fakeimg.pl/600x400" alt="product" class="img-fluid">
-                    </div>
-                    <div class="col-md-6">
-                        <h2>Product Name</h2>
-                        <!-- add start reviews -->
-                        <div class="d-flex">
+        <!-- show product category checkbox filters with price slider and products -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- filter by category -->
+                    <div class="filter-category">
+                        <h5>Filter by category</h5>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="fruit">
+                            <label for="fruit" class="form-check-label">Fruit (0)</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="vegetables">
+                            <label for="vegetables" class="form-check-label">Vegetables (0)</label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input type="checkbox" class="form-check-input" id="meat">
+                            <label for="meat" class="form-check-label">Meat (0)</label>
+                        </div>
 
-                            <div class="star-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
+                        <h5>Filter by price</h5>
+
+                        <!-- put 2 number input fields  -->
+
+                        <div class="row mb-2">
+                            <div class="col-md-6 form-group">
+                                <input type="number" class="form-control" placeholder="Min price" id="min-price">
+
                             </div>
-                            <p class="reviews"> (2 reviews)</p>
+
+
+                            <div class="col-md-6 form-group">
+                                <input type="number" class="form-control" placeholder="Max price" id="max-price">
+                            </div>
+
                         </div>
 
-                        <p class="price">$ Price here</p>
-                        <p class="text-success">In stock</p>
-                        <p class="description">Product description here</p>
-                        <div class="d-flex mb-4">
-                            <input type="number" class="form-control quantity" value="1">
-                            <a href="#" class="btn secondary-box-btn">Add to cart</a>
+
+                        <!-- price filter with min and max value -->
+                        <div class="price-filter">
+                            <input type="range" min="0" max="100" value="50" class="slider w-100" id="price">
                         </div>
 
-                        <!-- add to shopping list button with icon-->
-                        <button class="btn secondary-box-btn mb-4">
-                            <i class="fas fa-bars"></i>
-                            <span class="text-uppercase btn-txt">add to shopping list</span>
-                        </button>
+                        <!-- filter button -->
+                        <button class="btn secondary-box-btn">Filter</button>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <!-- show products -->
+                    <div class="row">
 
-                        <p>Additional Info Here</p>
+                        <!-- title -->
+                        <div class="col-md-12">
+                            <h3>Product Category</h3>
+                        </div>
+
+                        <!-- product 1 card -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="https://fakeimg.pl/600x400" alt="product" class="card-img-top img-thumbnail">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">Product 1</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product 2 card -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="https://fakeimg.pl/600x400" alt="product" class="card-img-top img-thumbnail">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">Product 2</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product 3 card -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="https://fakeimg.pl/600x400" alt="product" class="card-img-top img-thumbnail">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">Product 3</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product 4 card -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="https://fakeimg.pl/600x400" alt="product" class="card-img-top img-thumbnail">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">Product 4</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product 5 card -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="https://fakeimg.pl/600x400" alt="product" class="card-img-top img-thumbnail">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">Product 5</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product 6 card -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="https://fakeimg.pl/600x400" alt="product" class="card-img-top img-thumbnail">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">Product 6</h6>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- add tab section for additional information & reviews -->
-        <section class="tab-section mt-5">
-            <div class="container">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a href="#additional-info" class="nav-link active fs-4" data-bs-toggle="tab">Additional Information</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#reviews" class="nav-link fs-4" data-bs-toggle="tab">Reviews</a>
-                    </li>
-                </ul>
-                <div class="tab-content mt-4">
-                    <div class="tab-pane active" id="additional-info">
-                        <p>Additional Information Here</p>
-                    </div>
-                    <div class="tab-pane" id="reviews">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h3>2 Reviews for Product Name</h3>
-                                <div class="d-flex">
-                                    <div class="star-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                    <p class="reviews">4.5 (2 reviews)</p>
-                                </div>
-                                <div class="review">
-                                    <h5>Review Title Here</h5>
-                                    <p>Review Description Here</p>
-                                    <div class="d-flex">
-                                        <p class="reviewer">Reviewer Name</p>
-                                        <p class="review-date">Review Date</p>
-                                    </div>
-                                </div>
-                                <div class="review">
-                                    <h5>Review Title Here</h5>
-                                    <p>Review Description Here</p>
-                                    <div class="d-flex">
-                                        <p class="reviewer">
-                                            Reviewer Name
-                                        </p>
-                                        <p class="review-date">Review Date</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h3>Add a review</h3>
-                                <form action="">
-                                    <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input type="text" class="form-control" id="name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="review">Review</label>
-                                        <textarea name="review" id="review" cols="30" rows="10" class="form-control"></textarea>
-                                    </div>
-                                    <div class="form-group mb-4">
-                                        <label for="rating">Rating</label>
-                                        <select name="rating" id="rating" class="form-control">
-                                            <option value="5">5 Stars</option>
-                                            <option value="4">4 Stars</option>
-                                            <option value="3">3 Stars</option>
-                                            <option value="2">2 Stars</option>
-                                            <option value="1">1 Star</option>
-                                        </select>
-                                    </div>
-                                    <button type="submit" class="btn secondary-box-btn">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- related products section -->
-        <section class="related-products mt-5">
-            <div class="container">
-                <h2>Related Products</h2>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="https://fakeimg.pl/300x200" alt="product" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Product Name</h5>
-                                <p class="card-text">$ Price here</p>
-                                <div class="d-flex">
-                                    <input type="number" class="form-control quantity" value="1">
-                                    <a href="#" class="btn secondary-box-btn">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="https://fakeimg.pl/300x200" alt="product" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Product Name</h5>
-                                <p class="card-text">$ Price here</p>
-                                <div class="d-flex">
-                                    <input type="number" class="form-control quantity" value="1">
-                                    <a href="#" class="btn secondary-box-btn">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="https://fakeimg.pl/300x200" alt="product" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Product Name</h5>
-                                <p class="card-text">$ Price here</p>
-                                <div class="d-flex">
-                                    <input type="number" class="form-control quantity" value="1">
-                                    <a href="#" class="btn secondary-box-btn">Add to cart</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="https://fakeimg.pl/300x200" alt="product" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Product Name</h5>
-                                <p class="card-text">$ Price here</p>
-
-                                <div class="d-flex">
-                                    <input type="number" class="form-control quantity" value="1">
-                                    <a href="#" class="btn secondary-box-btn">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    </main>
 
     </main>
 
